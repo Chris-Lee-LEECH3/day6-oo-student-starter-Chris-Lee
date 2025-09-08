@@ -8,6 +8,10 @@ public class Student extends Person{
         super(id, name, age);
     }
 
+    public Klass getKlass() {
+        return klass;
+    }
+
     @Override
     public String introduce() {
         if (this.klass != null) {
