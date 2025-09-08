@@ -2,7 +2,7 @@ package oo;
 
 import java.util.Objects;
 
-public class Person {
+public abstract class Person {
     private Integer id;
     private String name;
     private Integer age;
@@ -37,9 +37,7 @@ public class Person {
         this.age = age;
     }
 
-    public String introduce() {
-        return "My name is " + name + ". I am " + age + " years old.";
-    }
+    public abstract String introduce();
 
     @Override
     public boolean equals(Object o) {
